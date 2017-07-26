@@ -2,7 +2,7 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 import subprocess as sp
 import time
-from Stepper import Stepper
+from StepperControls import Stepper, StepperSystem
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
@@ -55,9 +55,9 @@ try:
     print("IK Coordinates:", ik_coords)
     # Run code in loop
     while True:
-        motor1.step(100)
-        motor2.step(100)
-        motor3.step(100)
+        motor1.step_steps(100)
+        motor2.step_steps(100)
+        motor3.step_steps(100)
         time.sleep(0.5)
         print("Running stepper control!")
         break
