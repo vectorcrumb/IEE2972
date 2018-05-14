@@ -1,0 +1,10 @@
+<!-- saved from url=(0014)about:internet -->
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,65" id="srcline65">65</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,66" id="srcline66">66</a></span><span class="line"><span class="comment">% Map Minimum and Maximum Output Reverse-Processing Function</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,67" id="srcline67">67</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S38T1U443">x</span> = mapminmax_reverse(<span class="var type1" id="S39T1U446">y</span>,<span class="var type1" id="S40T1U447">settings_gain</span>,<span class="var type1" id="S41T1U448">settings_xoffset</span>,<span class="var type1" id="S42T2U449">settings_ymin</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="1,68" id="srcline68">68</a></span><span class="line"><span class="mxinfo " id="T1:U6"><span class="var type1" id="S38T1U452">x</span> = <span class="mxinfo " id="T1:U8">bsxfun(@minus,<span class="var type1" id="S39T1U457">y</span>,<span class="var type1" id="S42T2U458">settings_ymin</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,69" id="srcline69">69</a></span><span class="line"><span class="mxinfo " id="T1:U11"><span class="var type1" id="S38T1U461">x</span> = <span class="mxinfo " id="T1:U13">bsxfun(@rdivide,<span class="var type1" id="S38T1U466">x</span>,<span class="var type1" id="S40T1U467">settings_gain</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,70" id="srcline70">70</a></span><span class="line"><span class="mxinfo " id="T1:U16"><span class="var type1" id="S38T1U470">x</span> = <span class="mxinfo " id="T1:U18">bsxfun(@plus,<span class="var type1" id="S38T1U475">x</span>,<span class="var type1" id="S41T1U476">settings_xoffset</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,71" id="srcline71">71</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
