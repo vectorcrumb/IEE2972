@@ -2,6 +2,8 @@
 
 A continuacion se detalla todo el codigo creado para el control del espejo primario del telescopio, junto a las funcionalidades por implementar y/o testear. Este texto no ha sido revisado para faltas ortograficas y no incluye tildes intencionalmente.
 
+Para leer una version formateada de este documento (sin problemas de renderizado de MathJax), ver este [link](http://htmlpreview.github.io/?https://github.com/twbs/bootstrap/blob/gh-pages/2.3.2/index.html).
+
 ## Modelo de cinematica inversa
 
 El modelo de cinematica inversa es generado mediante una red neuronal entrenada en MATLAB, la cual toma 1M de muestras de puntos aleatorios factibles en el espacio de estado del sistema y calcula el punto focal en el espacio correspondiente a cada punto.
